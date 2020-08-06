@@ -1,0 +1,65 @@
+body {
+  text-align: center;
+}
+
+label {
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td:first-child {
+  text-align: left;
+  background-color: #999966;
+}
+
+table td:nth-child(2) {
+  background-color: #66ff33;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+.mainTitle {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 3rem;
+  color: #000000;
+  text-shadow: 0em 0.02em 0.02em #4d4d4d;
+}
+
+.section {
+  padding: 10px;
+  display: inline-block;
+  border: 3px solid black;
+}
+
+#latResult,
+#lngResult {
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  color: #66ff33;
+}
+
+#results1,
+#results2,
+#results3,
+#results4,
+#results5 {
+  display: none;
+}

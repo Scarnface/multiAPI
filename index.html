@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multi API</title>
+    <meta name="description" content="Multi API" />
+
+    <link rel="stylesheet" type="text/css" href="libs/css/styles.css" />
+  </head>
+
+  <body>
+    <h1 class="mainTitle">Choose An API</h1>
+
+    <span class="section">
+      <input id="selCountry" type="text" placeholder="Enter Country Code" />
+
+      <button id="api1">Search Country Info</button>
+    </span>
+
+    <br /><br />
+
+    <span class="section">
+      <input id="selLocation" type="text" placeholder="Enter A Location" />
+
+      <button id="api4">Search Location News</button>
+    </span>
+
+    <br /><br />
+
+    <span class="section">
+      <input
+        id="selLat"
+        type="text"
+        size="35"
+        min="-90"
+        max="90"
+        placeholder="Enter Latitude (between -90 and 90)"
+      /><br /><br />
+
+      <input
+        id="selLng"
+        type="text"
+        size="35"
+        min="-180"
+        max="80"
+        placeholder="Enter Longitude (between -180 and 80)"
+      /><br /><br />
+
+      <button id="api2">Search Location</button><br /><br />
+
+      <button id="api3">Search Weather</button><br /><br />
+
+      <button id="api5">Search Postcodes</button><br /><br />
+    </span>
+
+    <br /><br />
+
+    <div id="results1">
+      <table>
+        <tr>
+          <td>Continent:</td>
+          <td id="r1Continent"></td>
+        </tr>
+        <tr>
+          <td>Capital:</td>
+          <td id="r1Capital"></td>
+        </tr>
+        <tr>
+          <td>Languages:</td>
+          <td id="r1Languages"></td>
+        </tr>
+        <tr>
+          <td>Population:</td>
+          <td id="r1Population"></td>
+        </tr>
+        <tr>
+          <td>Area (km<sup>2</sup>):</td>
+          <td id="r1Area"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="results2">
+      <table>
+        <tr>
+          <td>Location:</td>
+          <td id="r2Toponym"></td>
+        </tr>
+        <tr>
+          <td>Country Code:</td>
+          <td id="r2CountryCode"></td>
+        </tr>
+        <tr>
+          <td>Type:</td>
+          <td id="r2Type"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="results3">
+      <table>
+        <tr>
+          <td>Time & Date:</td>
+          <td id="r3DateTime"></td>
+        </tr>
+        <tr>
+          <td>Clouds:</td>
+          <td id="r3Clouds"></td>
+        </tr>
+        <tr>
+          <td>Humidity (g.m<sup>-3</sup>):</td>
+          <td id="r3Humidity"></td>
+        </tr>
+        <tr>
+          <td>Temperature (°C):</td>
+          <td id="r3Temperature"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="results4">
+      <table>
+        <tr>
+          <td>Title:</td>
+          <td id="r4TitleA"></td>
+        </tr>
+        <tr>
+          <td>Summary:</td>
+          <td id="r4SummaryA"></td>
+        </tr>
+        <tr>
+          <td>Wikipedia URL:</td>
+          <td id="r4UrlA"></td>
+        </tr>
+      </table></br></br>
+        
+      <table>
+        <tr>
+          <td>Title:</td>
+          <td id="r4TitleB"></td>
+        </tr>
+        <tr>
+          <td>Summary:</td>
+          <td id="r4SummaryB"></td>
+        </tr>
+        <tr>
+          <td>Wikipedia URL:</td>
+          <td id="r4UrlB"></td>
+        </tr>
+      </table></br></br>
+
+      <table>
+        <tr>
+          <td>Title:</td>
+          <td id="r4TitleC"></td>
+        </tr>
+        <tr>
+          <td>Summary:</td>
+          <td id="r4SummaryC"></td>
+        </tr>
+        <tr>
+          <td>Wikipedia URL:</td>
+          <td id="r4UrlC"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="results5">
+      <table>
+        <tr>
+          <td>Place Name:</td>
+          <td id="r5PlaceA"></td>
+        </tr>
+        <tr>
+          <td>Post Code:</td>
+          <td id="r5PostCodeA"></td>
+        </tr>
+      </table></br></br>
+
+      <table>
+        <tr>
+          <td>Place Name:</td>
+          <td id="r5PlaceB"></td>
+        </tr>
+        <tr>
+          <td>Post Code:</td>
+          <td id="r5PostCodeB"></td>
+        </tr>
+      </table></br></br>
+
+      <table>
+        <tr>
+          <td>Place Name:</td>
+          <td id="r5PlaceC"></td>
+        </tr>
+        <tr>
+          <td>Post Code:</td>
+          <td id="r5PostCodeC"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <script
+      type="application/javascript"
+      src="libs/js/jquery-2.2.3.min.js"
+    ></script>
+    <script type="application/javascript" src="libs/js/scripts.js"></script>
+  </body>
+</html>
