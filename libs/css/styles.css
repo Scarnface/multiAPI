@@ -2,11 +2,6 @@ body {
   text-align: center;
 }
 
-label {
-  font-family: Arial, sans-serif;
-  font-size: 1.5em;
-}
-
 table,
 th,
 td {
@@ -54,12 +49,4 @@ td {
   font-family: Arial, sans-serif;
   font-size: 1.5em;
   color: #66ff33;
-}
-
-#results1,
-#results2,
-#results3,
-#results4,
-#results5 {
-  display: none;
 }

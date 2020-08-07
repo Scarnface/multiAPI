@@ -2,8 +2,8 @@
 
 	$executionStartTime = microtime(true) / 1000;
 
-  if(isset($_POST['function'])) {
-    if($_POST['function'] == 'api1') {
+  if(isset($_POST['apiNum'])) {
+    if($_POST['apiNum'] == 'api1') {
       $url = 'http://api.geonames.org/countryInfoJSON';
       $query_fields = [
         'formatted' => 'true',
@@ -12,7 +12,7 @@
         'style' => 'full',
         'country' => $_REQUEST['country']
       ];
-    } elseif($_POST['function'] == 'api2') {
+    } elseif($_POST['apiNum'] == 'api2') {
       $url = 'http://api.geonames.org/findNearbyPlaceNameJSON';
       $query_fields = [
         'formatted' => 'true',
@@ -22,7 +22,7 @@
         'lat' => $_REQUEST['lat'],
         'lng' => $_REQUEST['lng'],             
       ];
-    } elseif($_POST['function'] == 'api3') {
+    } elseif($_POST['apiNum'] == 'api3') {
       $url = 'http://api.geonames.org/findNearByWeatherJSON';
       $query_fields = [
         'formatted' => 'true',
@@ -32,7 +32,7 @@
         'lat' => $_REQUEST['lat'],
         'lng' => $_REQUEST['lng'],  
       ];
-    } elseif($_POST['function'] == 'api4') {
+    } elseif($_POST['apiNum'] == 'api4') {
       $url = 'http://api.geonames.org/wikipediaSearchJSON';
       $query_fields = [
         'formatted' => 'true',
@@ -42,7 +42,7 @@
         'maxRows' => 3, 
         'q' => $_REQUEST['q'],
       ];
-    } elseif($_POST['function'] == 'api5') {
+    } elseif($_POST['apiNum'] == 'api5') {
       $url = 'http://api.geonames.org/findNearbyPostalCodesJSON';
       $query_fields = [
         'formatted' => 'true',
@@ -66,12 +66,12 @@
 	$output['status']['name'] = "ok";
 	$output['status']['description'] = "mission saved";
   $output['status']['returnedIn'] = (microtime(true) - $executionStartTime) / 1000 . " ms";
-  if(isset($_POST['function'])) {
-    if($_POST['function'] == 'api1' or $_POST['function'] == 'api2' or $_POST['function'] == 'api4') {
+  if(isset($_POST['apiNum'])) {
+    if($_POST['apiNum'] == 'api1' or $_POST['apiNum'] == 'api2' or $_POST['apiNum'] == 'api4') {
       $output['data'] = $response['geonames'];
-    } elseif($_POST['function'] == 'api3') {
+    } elseif($_POST['apiNum'] == 'api3') {
       $output['data'] = $response['weatherObservation'];
-    } elseif($_POST['function'] == 'api5') {
+    } elseif($_POST['apiNum'] == 'api5') {
       $output['data'] = $response['postalCodes'];
     }
   }

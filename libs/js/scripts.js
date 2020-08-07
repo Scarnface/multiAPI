@@ -1,23 +1,28 @@
 $("#api1").click(function () {
+  var button = this.id;
+
   $.ajax({
     url: "libs/php/functions.php",
     type: "POST",
     dataType: "json",
     data: {
-      function: "api1",
+      apiNum: "api1",
       country: $("#selCountry").val(),
     },
     success: function (result) {
       console.log(result);
 
       if (result.status.name == "ok") {
-        $("#results2, #results3, #results4, #results5").hide();
-        $("#results1").show();
-        $("#r1Continent").html(result["data"][0]["continent"]);
-        $("#r1Capital").html(result["data"][0]["capital"]);
-        $("#r1Languages").html(result["data"][0]["languages"]);
-        $("#r1Population").html(result["data"][0]["population"]);
-        $("#r1Area").html(result["data"][0]["areaInSqKm"]);
+        if (button === "api1") {
+          $("#results").find("tbody").empty();
+          $.each(result, function (key, value) {
+            $.each(value[0], function (k, val) {
+              $("#results tbody").append(
+                "<tr><td>" + k + "</td><td>" + val + "</td></tr>"
+              );
+            });
+          });
+        }
       }
     },
     error: function (jqXHR, textStatus, errorThrown) {
@@ -32,7 +37,7 @@ $("#api2").click(function () {
     type: "POST",
     dataType: "json",
     data: {
-      function: "api2",
+      apiNum: "api2",
       lat: $("#selLat").val(),
       lng: $("#selLng").val(),
     },
@@ -59,7 +64,7 @@ $("#api3").click(function () {
     type: "POST",
     dataType: "json",
     data: {
-      function: "api3",
+      apiNum: "api3",
       lat: $("#selLat").val(),
       lng: $("#selLng").val(),
     },
@@ -87,7 +92,7 @@ $("#api4").click(function () {
     type: "POST",
     dataType: "json",
     data: {
-      function: "api4",
+      apiNum: "api4",
       q: $("#selLocation").val(),
     },
     success: function (result) {
@@ -119,7 +124,7 @@ $("#api5").click(function () {
     type: "POST",
     dataType: "json",
     data: {
-      function: "api5",
+      apiNum: "api5",
       lat: $("#selLat").val(),
       lng: $("#selLng").val(),
     },
