@@ -46,6 +46,10 @@ $("#api1, #api2, #api3, #api4, #api5").click(function () {
           if (Array.isArray(value)) {
             for (var i = 0; i < value.length; i++) {
               $.each(value[i], JSONIterator);
+              //Adds an empty row between results
+              $("#results tbody").append(
+                '<tr><td colspan="2">' + "" + "</td></tr>"
+              );
             }
           } else {
             $.each(value, JSONIterator);
