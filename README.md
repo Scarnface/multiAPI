@@ -1,26 +1,24 @@
-              _-o#&&*''''?d:>b\_
-          _o/"`''  '',, dMF9MMMMMHo_
-       .o&#'        `"MbHMMMMMMMMMMMHo.
-     .o"" '         vodM*$&&HMMMMMMMMMM?.
-    ,'              $M&ood,~'`(&##MMMMMMH\
-   /               ,MMMMMMM#b?#bobMMMMHMMML
-  &              ?MMMMMMMMMMMMMMMMM7MMM$R*Hk
- ?$.            :MMMMMMMMMMMMMMMMMMM/HMMM|`*L
-|               |MMMMMMMMMMMMMMMMMMMMbMH'   T,
-$H#:            `*MMMMMMMMMMMMMMMMMMMMb#}'  `?
-]MMH#             ""*""""*#MMMMMMMMMMMMM'    -
-MMMMMb_                   |MMMMMMMMMMMP'     :
-HMMMMMMMHo                 `MMMMMMMMMT       .
-?MMMMMMMMP                  9MMMMMMMM}       -
--?MMMMMMM                  |MMMMMMMMM?,d-    '
- :|MMMMMM-                 `MMMMMMMT .M|.   :
-  .9MMM[                    &MMMMM*' `'    .
-   :9MMk                    `MMM#"        -
-     &M}                     `          .-
-      `&.                             .
-        `~,   .                     ./
-            . _                  .-
-              '`--._,dd###pp=""'
+```
+           _.-,=_"""--,_
+        .-" =/7"   _  .3#"=.
+      ,#7  " "  ,//)#d#######=.
+    ,/ "      # ,i-/###########=
+   /         _)#sm###=#=# #######\
+  /         (#/"_`;\//#=#\-#######\
+ /         ,d####-_.._.)##P########\
+,        ,"############\\##bi- `\| Y.
+|       .d##############b\##P'   V  |
+|\      '#################!",       |
+|C.       \###=############7        |
+'###.           )#########/         '
+ \#(             \#######|         /
+  \B             /#######7 /      /
+   \             \######" /"     /
+    `.            \###7'       ,'
+      "-_          `"'      ,-'
+         "-._           _.-"
+             """"---""""
+```
 
 # multiAPI
 Multiple API AJAX/PHP/CURL/JSON
